@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Confirm Email | Shop Camzon</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="confirm-email.css">
+
+</head>
+
+<body>
+
+
+
+<!--==========================================
+LOADER
+===========================================-->
+
+<div id="loader">
+
+    <div class="loader-spinner"></div>
+
+</div>
+
+
+
+<!--==========================================
+BACKGROUND
+===========================================-->
+
+<div class="background">
+
+    <div class="circle circle-one"></div>
+
+    <div class="circle circle-two"></div>
+
+</div>
+
+
+
+<!--==========================================
+MAIN CONTAINER
+===========================================-->
+
+<div class="confirm-container">
+
+    <div class="confirm-card">
+         <!--==================================
+        ICON
+        ===================================-->
+
+        <div class="mail-icon">
+
+            <i class="fa-solid fa-envelope-circle-check"></i>
+
+        </div>
+
+
+
+        <!--==================================
+        HEADING
+        ===================================-->
+
+        <h1>
+
+            Verify Your Email
+
+        </h1>
+
+
+
+        <p>
+
+            We've sent a verification link to your email address.
+
+            Please open your inbox and click the verification link before continuing.
+
+        </p>
+
+
+
+        <div id="message"
+             class="message"></div>
+        <!--==================================
+        BUTTONS
+        ===================================-->
+
+        <button id="checkVerification">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            I've Verified My Email
+
+        </button>
+
+
+
+        <button id="resendEmail"
+                class="secondary-button">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+            Resend Verification Email
+
+        </button>
+        <div class="links">
+
+            <a href="login.html">
+
+                Back to Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Supabase -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Config -->
+
+<script src="../config/config.js"></script>
+
+<script src="../config/supabase.js"></script>
+
+<!-- JavaScript -->
+
+<script src="confirm-email.js"></script>
+
+</body>
+
+</html>
